@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compuertas Lógicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Compuertas Lógicas Y Circuitos Logicos</h1>
+    </header>
+    <main>
+        <section class="compuerta">
+            <h2>Compuerta AND</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="andA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="andB">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/and.png" alt="">
+                <div id="andSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta OR</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="orA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="orB">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/or.png" alt="">
+                <div id="orSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta NOT</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="notEntrada">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/not.png" alt="">
+                <div id="notSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta NAND</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="nandA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="nandB">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/nand.png" alt="">
+                <div id="nandSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta NOR</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="norA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="norB">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/nor.png" alt="">
+                <div id="norSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta XOR</h2>
+            
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="xorA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="xorB">
+                    <span class="slider"></span>
+                </label>
+                <img src="./assets/img/xor.png" alt="">
+                <div id="xorSalida" class="salida led"></div>
+            </div>
+        </section>
+        <section class="compuerta">
+            <h2>Compuerta XNOR</h2>
+            <div class="interactivo">
+                <label class="switch">
+                    <input type="checkbox" id="xnorA">
+                    <span class="slider"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="xnorB">
+                    <span class="slider"></span>
+                </label>
+                <div id="xnorSalida" class="salida led"></div>
+            </div>
+        </section>
+        
+        <section class="circuitos" >
+            <h2>Circuitos Lógicos</h2>
+            <div class="circuito">
+                <h3>Sumador</h3>
+                <div class="interactivo" style="gap: 15px;">
+                    <label class="switch">
+                        <input type="checkbox" id="sumadorA">
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" id="sumadorB">
+                        <span class="slider"></span>
+                    </label>
+                    <div id="sumadorSalida" class="salida led"></div>
+                </div>
+            </div>
+            <div class="circuito">
+                <h3>Multiplicador</h3>
+                <div class="interactivo" style="gap: 15px;">
+                    <label class="switch">
+                        <input type="checkbox" id="multiplicadorA">
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" id="multiplicadorB">
+                        <span class="slider"></span>
+                    </label>
+                    <div id="multiplicadorSalida" class="salida led"></div>
+                </div>
+            </div>
+            <div class="circuito">
+                <h3>Flip-Flop</h3>
+                <div class="interactivo" style="gap: 15px;">
+                    <label class="switch">
+                        <input type="checkbox" id="flipFlopA">
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" id="flipFlopB">
+                        <span class="slider"></span>
+                    </label>
+                    <div id="flipFlopSalida" class="salida led"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="circuito-complejo">
+            <h2>Circuito Lógico Complejo</h2>
+            <div class="card" style="display: flex; flex-direction: row; justify-content: center;">
+                <div class="interactivo" style="display: flex; flex-direction:row;">
+                    <div class="card">
+                        <label class="switch">
+                            <input type="checkbox" id="complejoA">
+                            <span class="slider"></span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="complejoB">
+                            <span class="slider"></span>
+                        </label>
+                        <img src="./assets/img/and.png" alt="" style="width: 50px;">
+                    </div>
+                    <img src="./assets/img/or.png" alt="" style="width: 50px;">
+                    <div class="card">
+                        <label class="switch">
+                            <input type="checkbox" id="complejoC">
+                            <span class="slider"></span>
+                        </label>
+                        
+                    </div>
+
+                </div>
+                <img src="./assets/img/not.png" alt="" style="width: 50px;">
+                <div id="complejoSalida" class="salida led"></div>
+            </div>
+            <h3>Tabla de Verdad</h3>
+            <table id="tablaVerdad">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>Salida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de la tabla de verdad se llenarán dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="circuitos.js"></script>
+    <script src="complejo.js"></script> <!-- Nuevo archivo de JS para circuito complejo -->
+</body>
+</html>
